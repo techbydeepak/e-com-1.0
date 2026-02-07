@@ -7,12 +7,9 @@ import AllProducts from './pages/home/all products/AllProducts'
 import SingleProduct from './pages/home/single product/SingleProduct'
 import Cart from './pages/home/cart/Cart'
 
-// Ye dynamic REPO_BASE use karo
-const REPO_BASE = import.meta.env.PROD ? '/namandigital_task3_e_com' : ''
-
 function App() {
   return (
-    <Router basename={REPO_BASE}>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
